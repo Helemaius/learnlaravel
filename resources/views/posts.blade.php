@@ -6,6 +6,8 @@
     <a href="{{$posts->previousPageUrl()}}" class="btn btn-primary {{$posts->previousPageUrl() ? '' : 'disabled'}}">prev</a>
     <a href="{{$posts->nextPageUrl()}}" class="btn btn-primary">next</a>
     <ul>
+
+    {{$posts->links()}}
         <div class="row row-cols-4 ">
     @foreach($posts as $post)
             <div class="col mb-3">
